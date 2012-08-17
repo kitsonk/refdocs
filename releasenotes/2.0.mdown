@@ -1,0 +1,13 @@
+# Dojo 2.0 Alpha - Release Notes #
+
+*Work in Progress*
+
+<table>
+	<tbody>
+		<tr><th>Version:</th><td>2.0 Alpha</td></tr>
+	</tbody>
+</table>
+
+## dojo ##
+
+## dijit ##
