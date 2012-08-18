@@ -1,0 +1,10 @@
+= Testing =
+
+```js
+require(["dojo/dom", "dojo/domReady!"], function(dom){
+	console.log("nothing");
+});
+```
+
+== See Also ==
+
