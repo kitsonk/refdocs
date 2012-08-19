@@ -1,4 +1,4 @@
-= Testing =
+# Testing #
 
 ```js
 require(["dojo/dom", "dojo/domReady!"], function(dom){
@@ -6,5 +6,23 @@ require(["dojo/dom", "dojo/domReady!"], function(dom){
 });
 ```
 
-== See Also ==
+```glass
+description:
 
+Testing this out.
+
+js:
+require(["dojo/dom", "dojo/domReady!"], function(dom){
+	console.log(dom.byId("something"));
+});
+
+html:
+<div id="something">Test</div>
+
+css:
+#something { border: 2px solid back; }
+```
+
+## See Also ##
+
+* [testing](test)
