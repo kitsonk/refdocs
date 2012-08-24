@@ -1,4 +1,4 @@
-= dojo/Deferred =
+# dojo/Deferred #
 
 <table>
 	<tbody>
@@ -7,21 +7,21 @@
 	</tbody>
 <table>
 
-**dojo/Deferred** manages the communication between asynchronous threads (callbacks). Previously it resided in Dojo
+`dojo/Deferred` manages the communication between asynchronous threads (callbacks). Previously it resided in Dojo
 Base, but in 1.8 it was rewritten based on the new Promise architecture and moved out of base. `dojo/Deferred`
 encapsulates a sequence of callbacks in response to a value that may not yet be available. All of `dojo/request`
 modules make use of this class.
 
-== Introduction ==
+## Introduction ##
 
-**dojo/Deferred** is a class that is used as the foundation for managing asynchronous threads in Dojo.  Packages like `dojo/request` use this class to return a *promise* that gets *resolved* when the asynchronous thread is complete.  In order trigger a callback to occur when the thread is complete, the `.then()` method is used.  As well as the thread can be informed to cancel itself by using the `.cancel()` method.  If the thread has completed, then the `.then()` callback will be executed immediately.
+`dojo/Deferred` is a class that is used as the foundation for managing asynchronous threads in Dojo.  Packages like `dojo/request` use this class to return a *promise* that gets *resolved* when the asynchronous thread is complete.  In order trigger a callback to occur when the thread is complete, the `.then()` method is used.  As well as the thread can be informed to cancel itself by using the `.cancel()` method.  If the thread has completed, then the `.then()` callback will be executed immediately.
 
-== Usage ==
+## Usage ##
 
 Basic usage is instantiating a `dojo/Deferred` object, starting the thread and when it completes calling `.resolve()` with any results and returning the object to the consumer.  From a consumer perspective it is generally setting either a `.then()` callback with potentially an additional error callback as the second argument of then.  If the asynchronous process supports cancelling and it has been implemented, then the process can be cancelled via `.cancel()`.
 
 ```js
- require(["dojo/Deferred"], function(Deferred){
+require(["dojo/Deferred"], function(Deferred){
 	var deferred = new Deferred(function(reason){
 		// do something when the Deferred is cancelled
 	});
@@ -97,7 +97,7 @@ cancel(reason, strict)            Signal the deferred that we're no longer inter
 ================================= ======================================================================================
 ```
 
-== Examples ==
+## Examples ##
 
 ```
 .. code-example ::
@@ -270,8 +270,8 @@ cancel(reason, strict)            Signal the deferred that we're no longer inter
 	<button type="button" id="startButton">Start</button>
 ```
 
-== See Also ==
+## See Also ##
 
 * [dojo/promise](/dojo/promise) - The module that underpins `dojo/Deferred`.
 * [dojo/promise/Promise](/dojo/promise/Promise) - The underlying object used to provide the asynchronous thread communication.
-* [dojo/when](dojo/when) - The module that allows transparent management of promises and non-promise values.
+* [dojo/when](/dojo/when) - The module that allows transparent management of promises and non-promise values.
