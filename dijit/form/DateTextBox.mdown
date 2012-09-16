@@ -1,8 +1,21 @@
 # dijit/form/DateTextBox #
 
-:Authors: Becky Gibson, Doug Hays, Craig Riecke, Adam Peller
-:Developers: Doug Hays, Bill Keese
-:Since: V0.9
+<table>
+    <tbody>
+        <tr>
+            <th>Authors</th>
+            <td>Becky Gibson, Doug Hays, Craig Riecke, Adam Peller</td>
+        </tr>
+        <tr>
+            <th>Developers</th>
+            <td>Doug Hays, Bill Keese</td>
+        </tr>
+        <tr>
+            <th>Since</th>
+            <td>V0.9</td>
+        </tr>
+    </tbody>
+</table>
 
 DateTextBox widgets are easy-to-use date entry controls that allow either typing or choosing a date from any calendar widget.
 
