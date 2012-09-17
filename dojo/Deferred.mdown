@@ -134,7 +134,7 @@ This example provides a basic usage of Deferred, where we are creating an async 
 
 :::
 
-This example shows how ``.then()`` can be chained.
+	This example shows how ``.then()`` can be chained.
 
 ::dojoConfig::
 
@@ -179,8 +179,8 @@ This example shows how ``.then()`` can be chained.
 
 :::
 
-This example shows how ``.progress()`` and ``.reject()`` are used. You can see that while the `.resolve()` gets
-called, because the promise will already be fullfilled (by being rejected), the callback is never called.
+	This example shows how ``.progress()`` and ``.reject()`` are used. You can see that while the `.resolve()` gets
+	called, because the promise will already be fullfilled (by being rejected), the callback is never called.
 
 ::dojoConfig::
 
@@ -232,7 +232,8 @@ called, because the promise will already be fullfilled (by being rejected), the 
 :::
 
 :::
-In this example, we have implemented the ability to ``.cancel()`` a Deferred.
+
+	In this example, we have implemented the ability to ``.cancel()`` a Deferred.
 
 ::js::
 
