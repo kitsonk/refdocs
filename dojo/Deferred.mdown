@@ -88,7 +88,7 @@ cancel(reason, strict)           |Signal the deferred that we're no longer inter
 
 :::
 
-This example provides a basic usage of Deferred, where we are creating an async process via the ``setTimeout`` function.
+	This example provides a basic usage of Deferred, where we are creating an async process via the ``setTimeout`` function.
 
 ::dojoConfig::
 
