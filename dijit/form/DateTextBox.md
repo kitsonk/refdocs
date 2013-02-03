@@ -1,6 +1,6 @@
 # dijit/form/DateTextBox #
 
-<table>
+<table class="vertical">
     <tbody>
         <tr>
             <th>Authors</th>
@@ -62,7 +62,7 @@ The time portion of the Date object is ignored.
 
 ### Declarative example ###
 
-:::
+```codeglass
 
 ::js::
 
@@ -74,7 +74,7 @@ The time portion of the Date object is ignored.
     <input type="text" name="date1" id="date1" value="2005-12-30"
         data-dojo-type="dijit/form/DateTextBox"
         required="true" />
-:::
+```
 
 ### Alternate Date Format to/from a Server ###
 
@@ -89,7 +89,7 @@ you can create your own widget class which overrides the postMixInProperties and
 (See :ref:`Dijit <dijit/index>` for details on creating your own widgets.)
 Here's an example:
 
-:::
+```codeglass
 
 ::js::
 
@@ -129,7 +129,7 @@ Here's an example:
     <label for="toServerValue">Oracle date going back to server:</label>
     <input id="toServerValue" readonly="readonly" disabled="disabled" />
 
-:::
+```
 
 ### Changing Constraints on the Fly ###
 
@@ -139,7 +139,7 @@ To do this, you can set new ``constraints`` on the widget, but the catch is you 
 In this example, the first DateTextBox widget sets the `max` constraint of the second widget,
 and the second widget sets the `min` constraint of the first widget.
 
-:::
+```codeglass
 
 ::js::
 
@@ -153,7 +153,7 @@ and the second widget sets the `min` constraint of the first widget.
     <label for="toDate">To:</label>
     <input data-dojo-id="myToDate" type="text" name="toDate" data-dojo-type="dijit/form/DateTextBox" required="true"
         onChange="myFromDate.constraints.max = arguments[0];" />
-:::
+```
 
 ### Working with Two-Digit Years ###
 
@@ -162,7 +162,7 @@ Note the server still needs the full 4-digit year sent on form submit so that it
 There is a ``constraints`` property `fullYear` (boolean) that controls the presentation of the year as 2 digits or 4.
 The catch is that this can only be set after the widget has been created.
 
-:::
+```codeglass
 
 ::js::
 
@@ -177,7 +177,7 @@ The catch is that this can only be set after the widget has been created.
 
     <label for="myShortYear">From:</label>
     <input data-dojo-id="myShortYear" type="text" name="shortYear" data-dojo-type="dijit/form/DateTextBox" data-dojo-props="constraints:{fullYear: false}" value="1999-12-31" required="true" />
-:::
+```
 
 ## Accessibility ##
 

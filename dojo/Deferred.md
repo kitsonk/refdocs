@@ -1,6 +1,6 @@
 # dojo/Deferred #
 
-<table>
+<table class="vertical">
     <tbody>
         <tr>
             <th>Authors</th>
@@ -86,7 +86,7 @@ cancel(reason, strict)           |Signal the deferred that we're no longer inter
 
 ## Examples ##
 
-:::
+```codeglass
 
 	This example provides a basic usage of Deferred, where we are creating an async process via the ``setTimeout`` function.
 
@@ -130,9 +130,9 @@ cancel(reason, strict)           |Signal the deferred that we're no longer inter
 
 	#output { font-weight: bold; }
 
-:::
+```
 
-:::
+```codeglass
 
 	This example shows how ``.then()`` can be chained.
 
@@ -175,9 +175,9 @@ cancel(reason, strict)           |Signal the deferred that we're no longer inter
 	<div id="output">Not yet started.</div>
 	<button type="button" id="startButton">Start</button>
 
-:::
+```
 
-:::
+```codeglass
 
 	This example shows how ``.progress()`` and ``.reject()`` are used. You can see that while the `.resolve()` gets
 	called, because the promise will already be fullfilled (by being rejected), the callback is never called.
@@ -229,9 +229,9 @@ cancel(reason, strict)           |Signal the deferred that we're no longer inter
 	<div id="output">Not yet started.</div>
 	<button type="button" id="startButton">Start</button>
 
-:::
+```
 
-:::
+```codeglass
 
 	In this example, we have implemented the ability to ``.cancel()`` a Deferred.
 
@@ -274,7 +274,7 @@ cancel(reason, strict)           |Signal the deferred that we're no longer inter
 	<h1>Output:</h1>
 	<div id="output">Not yet started.</div>
 	<button type="button" id="startButton">Start</button>
-:::
+```
 
 ## See Also ##
 

@@ -6,7 +6,7 @@ require(["dojo/dom", "dojo/domReady!"], function(dom){
 });
 ```
 
-```glass
+```codeglass
 description:
 
 Testing this out.
